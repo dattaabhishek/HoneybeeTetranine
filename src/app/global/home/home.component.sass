@@ -1,0 +1,52 @@
+$imgPath : '/assets/images'
+$border-color: rgb(216, 216, 216)
+$shadow: rgba(0,0,0,0.3)
+$mediaSize: 800px
+
+.homePage
+  //border: 1px solid black
+  display: flex
+
+.welcomeNote
+  //border: 1px solid $border-color
+  width: 40%
+  margin: 20px 15px 15px 15px
+  padding: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.hello
+  font-size: 30px
+  line-height: normal
+
+.welcomeNoteDescription
+  font-size: 20px
+  line-height: normal
+
+.videoFrame
+  border: 1px solid $border-color
+  border-radius: 5px
+
+.demoCard 
+  width: 60%
+  margin: 20px 15px 15px 15px
+  padding: 10px 20px 0px 20px
+  border: 1px solid $border-color
+  box-shadow: 5px 5px 5px 0px $shadow
+
+.demoContent
+  margin: 15px 0px 0px 0px
+  text-align: center
+
+.demoHeaderImage 
+  background-image: url($imgPath+'/HT.png')
+  background-size: cover
+
+@media (max-width: $mediaSize)
+  .homePage
+    flex-wrap: wrap
+  .welcomeNote, .demoCard 
+    width: 100%
+  .welcomeNote
+    padding: 50px

@@ -1,0 +1,30 @@
+<div class="homePage">
+    <mat-card class="demoCard">
+        <mat-card-header>
+            <div mat-card-avatar class="demoHeaderImage"></div>
+            <mat-card-title>HONEYBEE TETRANINE</mat-card-title>
+            <mat-card-subtitle>Musician</mat-card-subtitle>
+        </mat-card-header>
+        <iframe width="auto" height="315" 
+            src="https://www.youtube.com/embed/kuHSIAeOcV0?&autoplay=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            class="videoFrame" allowfullscreen>
+        </iframe>
+        <mat-card-content class="demoContent">
+            <h4>
+                {{cardContentTitle}}
+                <br>
+                <h2>{{cardContentName}}</h2>
+            </h4>
+        </mat-card-content>
+    </mat-card>
+
+    <div class="welcomeNote">
+        <div>
+            <p class="hello">{{hello}}</p>
+            <p class="welcomeNoteDescription">{{welcomeNote}}</p>
+        </div>
+    </div>
+</div>

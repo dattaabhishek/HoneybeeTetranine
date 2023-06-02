@@ -1,0 +1,25 @@
+$border-color: rgb(216, 216, 216)
+$mediaSize: 800px
+
+.hireMeCardHolder
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.hireMeCards
+    width: 46%
+    margin: 20px 15px 15px 15px
+    padding: 10px 20px 10px 20px
+    border: 1px solid $border-color
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3)
+
+.hireMeCards:hover
+    cursor: pointer
+
+.imgIcon
+    //border: 1px solid black
+    margin: 7px
+
+@media (max-width: $mediaSize)
+    .hireMeCards
+        width: 100%
