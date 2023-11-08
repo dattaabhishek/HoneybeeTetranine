@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./guitar-lessons.component.sass']
 })
 export class GuitarLessonsComponent {
+  selected!: Date | null;
   bookClasses = `Personalized classes`;
-  bookClassesDescription = `This page will be available soon!`
+  //bookClassesDescription = `This page will be available soon!`
   temp = `Choose and book your personalized class slots 
   for every month in advance and get personalized guidance from me.`;
 }

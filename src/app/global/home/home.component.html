@@ -2,10 +2,10 @@
     <mat-card class="demoCard">
         <mat-card-header>
             <div mat-card-avatar class="demoHeaderImage"></div>
-            <mat-card-title>HONEYBEE TETRANINE</mat-card-title>
-            <mat-card-subtitle>Musician</mat-card-subtitle>
+            <mat-card-title>{{name}}</mat-card-title>
+            <mat-card-subtitle>{{profession}}</mat-card-subtitle>
         </mat-card-header>
-        <iframe width="auto" height="315" 
+        <iframe 
             src="https://www.youtube.com/embed/kuHSIAeOcV0?&autoplay=1" 
             title="YouTube video player" 
             frameborder="0" 
@@ -16,7 +16,7 @@
             <h4>
                 {{cardContentTitle}}
                 <br>
-                <h2>{{cardContentName}}</h2>
+                <h2>{{name}}</h2>
             </h4>
         </mat-card-content>
     </mat-card>
@@ -26,5 +26,6 @@
             <p class="hello">{{hello}}</p>
             <p class="welcomeNoteDescription">{{welcomeNote}}</p>
         </div>
+        <a mat-stroked-button href="google.com" target="_blank" class="guitar-lessons-button">{{guitarLessonsButton}}</a>
     </div>
 </div>

@@ -1,83 +1,18 @@
 <div class="guitarLessonsCardHolder">
     <div class="bookClassesContainer">
-        <mat-card class="bookClassesCard" onclick="window.open('https://www.google.com/search?q=honeybee+tetranine', '_blank')">
+        <mat-card class="bookClassesCard">
             <mat-card-header>
             <mat-card-title-group>
-                <mat-card-title>Book classes</mat-card-title>
+                <mat-card-title>Book one to one classes</mat-card-title>
                 <mat-card-subtitle>{{bookClasses}}</mat-card-subtitle>
-                <img mat-card-md-image src="assets/images/HTLogoTransSquare.png" alt="HONEYBEE TETRANINE" class="imgIcon">
+                <!--<img mat-card-md-image src="assets/images/HTLogoTransSquare.png" alt="HONEYBEE TETRANINE" class="imgIcon">-->
             </mat-card-title-group>
             </mat-card-header>
-            <mat-card-content>
-                <h4>{{bookClassesDescription}}</h4>
+            <mat-card-content class="scheduler">
+                <mat-calendar [(selected)]="selected" class="calender_properties"></mat-calendar>
             </mat-card-content>
         </mat-card>
     </div>
-    <!--<div class="row1">
-        <mat-card class="guitarLessonsCard">
-            <mat-card-header>
-                <div mat-card-avatar class="guitarLessonsHeaderImage"></div>
-                <mat-card-title>{{tinyEssentialThings}}</mat-card-title>
-            </mat-card-header>
-            <iframe width="auto" height="315" 
-            src="https://www.youtube.com/embed/videoseries?list=PLhBVEoHtrnI55EAo_y3IlwrEOR6_ccceU" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            class="videoFrame" allowfullscreen>
-            </iframe>
-            <mat-card-content class="guitarLessonsContent">
-                <p>{{tinyEssentialThingsDescription}}</p>
-            </mat-card-content>
-        </mat-card>
 
-        <mat-card class="guitarLessonsCard">
-            <mat-card-header>
-                <div mat-card-avatar class="guitarLessonsHeaderImage"></div>
-                <mat-card-title>{{shreddingLessons}}</mat-card-title>
-            </mat-card-header>
-            <iframe width="auto" height="315" 
-            src="https://www.youtube.com/embed/videoseries?list=PLhBVEoHtrnI59GjFOfTNUiI_YImW8vCTn" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            class="videoFrame" allowfullscreen>
-            </iframe>
-            <mat-card-content class="guitarLessonsContent">
-                <p>{{shreddingLessonsDescription}}</p>
-            </mat-card-content>
-        </mat-card>
-    </div>
-<br>
-    <div class="row2">
-        <mat-card class="guitarLessonsCard">
-            <mat-card-header>
-                <div mat-card-avatar class="guitarLessonsHeaderImage"></div>
-                <mat-card-title>{{altPicking}}</mat-card-title>
-            </mat-card-header>
-            <iframe width="auto" height="315" 
-            src="https://www.youtube.com/embed/videoseries?list=PLhBVEoHtrnI6q4EuqAD_N28bB1AiDlv2-" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            class="videoFrame" allowfullscreen>
-            </iframe>
-            <mat-card-content class="guitarLessonsContent">
-                <p>{{altPickingDescription}}</p>
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card class="guitarLessonsCard">
-            <mat-card-header>
-                <div mat-card-avatar class="guitarLessonsHeaderImage"></div>
-                <mat-card-title>{{sweepPicking}}</mat-card-title>
-            </mat-card-header>
-            <iframe width="auto" height="315" 
-            src="https://www.youtube.com/embed/videoseries?list=PLhBVEoHtrnI4PWvVU3UAFrktK7HdblKit" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            class="videoFrame" allowfullscreen>
-            </iframe>
-            <mat-card-content class="guitarLessonsContent">
-                <p>{{sweepPickingDescription}}</p>
-            </mat-card-content>
-        </mat-card>
-    </div>-->
+      <p>Selected date: {{selected}}</p>
 </div>

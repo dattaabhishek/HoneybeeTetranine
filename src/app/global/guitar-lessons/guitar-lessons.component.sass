@@ -3,39 +3,28 @@ $border-color: rgb(216, 216, 216)
 $shadow: rgba(0,0,0,0.3)
 $mediaSize: 800px
 
-.guitarLessonsCardHolder, .bookClassesContainer, .row1, .row2
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
+.guitarLessonsCardHolder, .bookClassesContainer, .scheduler
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  transition: .3s
 
 .bookClassesContainer, .row1, .row2
-    width: 100%
+  width: 100%
 
 .videoFrame
   border: 1px solid $border-color
   border-radius: 5px
 
-.guitarLessonsCard 
-  width: 46%
-
 .bookClassesCard
   width: 94%
-  cursor: pointer
-
-.guitarLessonsCard, .bookClassesCard
+  //cursor: pointer
   margin: 20px 15px 15px 15px
   padding: 10px 20px 0px 20px
   border: 1px solid $border-color
   box-shadow: 5px 5px 5px 0px $shadow
+  transition: .3s
 
-.guitarLessonsContent
-  margin: 15px 0px 0px 0px
-  text-align: center
-
-.guitarLessonsHeaderImage 
-  background-image: url($imgPath+'/HT.png')
-  background-size: cover
-
-@media (max-width: $mediaSize)
-    .guitarLessonsCard 
-        width: 100%
+.calender_properties
+  width: 25%
+  transition: .3s

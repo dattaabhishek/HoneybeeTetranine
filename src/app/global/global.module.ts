@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HireMeComponent } from './hire-me/hire-me.component';
 import { GuitarLessonsComponent } from './guitar-lessons/guitar-lessons.component';
 import { SocialsComponent } from './socials/socials.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { SocialsComponent } from './socials/socials.component';
     CommonModule,
     MatTabsModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatButtonModule
   ],
   exports: [
     HeaderComponent,
