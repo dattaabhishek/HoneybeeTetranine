@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass']
+  selector: 'app-profile',
+  // standalone: true,
+  // imports: [CommonModule],
+  templateUrl: './profile.component.html',
+  styleUrl: './profile.component.sass'
 })
-export class HomeComponent {
+export class ProfileComponent {
   profession = "Guitarist / Musician"
   cardContentTitle = "MOONLIGHT SONATA 3RD MOVEMENT | GUITAR METAL COVER";
   name = "HONEYBEE TETRANINE";

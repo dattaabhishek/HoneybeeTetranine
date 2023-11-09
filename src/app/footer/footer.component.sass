@@ -1,0 +1,78 @@
+$footerColor: rgb(27, 27, 27)
+$border-color: rgb(216, 216, 216)
+
+.footer
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    border: 1px solid black
+    text-align: center
+    padding: 2px
+    margin: 1px 0px 0px 0px
+    background: $footerColor
+    position: relative
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 1
+    // border: 1px solid $border-color
+    border-radius: 2px
+
+    .copyrightText
+        //position: absolute
+        //justify-content: flex-start
+        border: 1px solid $footerColor
+        //width: 33%
+        color: white
+
+    .socials
+        //position: absolute
+        //padding: 0px 10px 0px 10px
+        //right: 5px
+        border: 1px solid $footerColor
+        //width: 33%
+
+        .sideBarLinks
+            //position: relative
+            text-align: center
+            //width: 100% //cover parent width
+            //padding: 100px 0px  //padding height width
+            // border: 1px solid black
+            // border-radius: 5px
+            //background: rgb(0, 0, 0)
+
+            .socialLinks
+                -webkit-transition: .5s
+                border: 1px solid $footerColor
+                border-radius: 2px
+                margin: 0px 5px 0px 5px
+
+            .socialLinks:hover
+                padding: 1px
+                border: 1px solid white
+
+            .YouTube
+                color: rgb(255, 0, 0)
+
+            .Instagram
+                background: -webkit-linear-gradient(top left, rgb(254,218,117), rgb(250,126,30), rgb(214,41,118), rgb(150,47,191), rgb(79,91,213))
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+
+            .Facebook
+                color: rgb(24 119 242)
+
+            .Twitter
+                color: skyblue
+
+            .Email
+                color: white
+
+
+
+    .buildInfo
+        //position: absolute
+        border: 1px solid $footerColor
+        color: white
+        text-align: center
+        width: auto
