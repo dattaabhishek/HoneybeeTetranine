@@ -6,6 +6,7 @@ import { ProfileNavigationComponent } from './profile-navigation/profile-navigat
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { SocialComponent } from './social/social.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -19,7 +20,8 @@ import { SocialComponent } from './social/social.component';
     CommonModule,
     MatTabsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterModule
   ],
   exports: [
     ProfileComponent,
